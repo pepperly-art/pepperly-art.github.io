@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en" class="bg-transparent antialiased [&:has(:is(dialog[open]))]:(overflow-hidden [scrollbar-gutter:stable])" x-data>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Pepperly on Github :: Pepperly&amp;#39;s Commission Queue</title>
+    <meta name="description" content="A little github site that will keep track of my commissions and progress equally as easy as Trello." />
+    <meta name="author" content="Pepperly - https://pepperly.art" />
+    <meta name="generator" content="Eleventy v3.0.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link onload="this.onload=null;this.rel='stylesheet'" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" />
+
+    <meta property="og:title" content="Pepperly on Github :: Pepperly&amp;#39;s Commission Queue" />
+    <meta property="og:description" content="A little github site that will keep track of my commissions and progress equally as easy as Trello." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="/_assets/img/og.png" />
+
+    
+    <style>code[class*=language-],pre[class*=language-]{color:#e3eaf2;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:2;-o-tab-size:2;tab-size:2;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::-moz-selection,pre[class*=language-]::-moz-selection{background:0 0}code[class*=language-]::selection,pre[class*=language-]::selection{background:0 0}pre[class*=language-]{padding:1em;margin:0;overflow:auto}:not(pre)>code[class*=language-]{padding:.1em .3em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#8da1b9}.token.punctuation{color:#e3eaf2}.token.delimiter.important,.token.selector .parent,.token.tag,.token.tag .token.punctuation{color:#6cc}.token.attr-name,.token.boolean,.token.boolean.important,.token.constant,.token.number,.token.selector .token.attribute{color:#e6d37a}.token.class-name,.token.key,.token.parameter,.token.property,.token.property-access,.token.variable{color:#6cb8e6}.token.attr-value,.token.color,.token.inserted,.token.selector .token.value,.token.string,.token.string .token.url-link{color:#91d076}.token.builtin,.token.keyword-array,.token.package,.token.regex{color:#f4adf4}.token.function,.token.selector .token.class,.token.selector .token.id{color:#c699e3}.token.atrule .token.rule,.token.combinator,.token.keyword,.token.operator,.token.pseudo-class,.token.pseudo-element,.token.selector,.token.unit{color:#e9ae7e}.token.deleted,.token.important{color:#cd6660}.token.keyword-this,.token.this{color:#6cb8e6}.token.bold,.token.important,.token.keyword-this,.token.this{font-weight:700}.token.delimiter.important{font-weight:inherit}.token.italic{font-style:italic}.token.entity{cursor:help}.language-markdown .token.title,.language-markdown .token.title .token.punctuation{color:#6cb8e6;font-weight:700}.language-markdown .token.blockquote.punctuation{color:#f4adf4}.language-markdown .token.code{color:#6cc}.language-markdown .token.hr.punctuation{color:#6cb8e6}.language-markdown .token.url .token.content{color:#91d076}.language-markdown .token.url-link{color:#e6d37a}.language-markdown .token.list.punctuation{color:#f4adf4}.language-markdown .token.table-header{color:#e3eaf2}.language-json .token.operator{color:#e3eaf2}.language-scss .token.variable{color:#6cc}.token.token.cr:before,.token.token.lf:before,.token.token.space:before,.token.token.tab:not(:empty):before{color:#8da1b9}div.code-toolbar>.toolbar.toolbar>.toolbar-item>a,div.code-toolbar>.toolbar.toolbar>.toolbar-item>button{color:#111b27;background:#6cb8e6}div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:focus,div.code-toolbar>.toolbar.toolbar>.toolbar-item>a:hover,div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:focus,div.code-toolbar>.toolbar.toolbar>.toolbar-item>button:hover{color:#111b27;background:#6cb8e6da;text-decoration:none}div.code-toolbar>.toolbar.toolbar>.toolbar-item>span,div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:focus,div.code-toolbar>.toolbar.toolbar>.toolbar-item>span:hover{color:#111b27;background:#8da1b9}.line-highlight.line-highlight{background:#3c526d5f;background:linear-gradient(to right,#3c526d5f 70%,#3c526d55)}.line-highlight.line-highlight:before,.line-highlight.line-highlight[data-end]:after{background-color:#8da1b9;color:#111b27;box-shadow:0 1px #3c526d}pre[id].linkable-line-numbers.linkable-line-numbers span.line-numbers-rows>span:hover:before{background-color:#8da1b918}.line-numbers.line-numbers .line-numbers-rows{border-right:1px solid #0b121b;background:#0b121b7a}.line-numbers .line-numbers-rows>span:before{color:#8da1b9da}.rainbow-braces .token.token.punctuation.brace-level-1,.rainbow-braces .token.token.punctuation.brace-level-5,.rainbow-braces .token.token.punctuation.brace-level-9{color:#e6d37a}.rainbow-braces .token.token.punctuation.brace-level-10,.rainbow-braces .token.token.punctuation.brace-level-2,.rainbow-braces .token.token.punctuation.brace-level-6{color:#f4adf4}.rainbow-braces .token.token.punctuation.brace-level-11,.rainbow-braces .token.token.punctuation.brace-level-3,.rainbow-braces .token.token.punctuation.brace-level-7{color:#6cb8e6}.rainbow-braces .token.token.punctuation.brace-level-12,.rainbow-braces .token.token.punctuation.brace-level-4,.rainbow-braces .token.token.punctuation.brace-level-8{color:#c699e3}pre.diff-highlight>code .token.token.deleted:not(.prefix),pre>code.diff-highlight .token.token.deleted:not(.prefix){background-color:#cd66601f}pre.diff-highlight>code .token.token.inserted:not(.prefix),pre>code.diff-highlight .token.token.inserted:not(.prefix){background-color:#91d0761f}.command-line .command-line-prompt{border-right:1px solid #0b121b}.command-line .command-line-prompt>span:before{color:#8da1b9da}hr{border-width:2px;border-style:dashed}.audiowide{font-family:Audiowide,sans-serif}.img-preview{background-repeat:no-repeat;background-position:center;background-size:cover}a.fill-div{display:flex;height:100%;align-items:stretch}.lightbox{display:none;position:fixed;z-index:999;top:0;left:0;right:0;bottom:0;padding:1em;background:rgba(0,0,0,.5)}.lightbox:target{display:block}.lightbox span{display:block;width:100vw;height:100vh;background-position:center;background-repeat:no-repeat;background-size:contain}</style>
+    
+    
+    <script>
+      if (localStorage.getItem('color-mode') === 'dark' || (window.matchMedia('(prefers-color-scheme: dark)').matches && !localStorage.getItem('color-mode'))) {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+  </head>
+<body class="bg-neutral-200 text-pri-900 !block" style="background-image: url('_assets/img/argyle.png'); display: none;">
+  
+  <header class="w-100">
+      <div class="float-right mr-5 mt-5 -ml-20 bg-neutral-100 z-50" style="border-radius: 100%;">
+        <button class="color-mode text-gray-500 motion-safe:(transition) hover:(text-gray-700) m-3" aria-label="Toggle color mode">
+          <span class="block dark:(hidden)"><iconify-icon icon="mdi:weather-sunny" inline="false" class="iconify text-xl"></iconify-icon> <span class="sr-only">Switch to dark mode</span></span>
+          <span class="hidden dark:(block)"><iconify-icon icon="mdi:weather-night" inline="false" class="iconify text-xl"></iconify-icon> <span class="sr-only">Switch to light mode</span></span>
+        </button>
+      </div>
+  </header>
+
+  <main class="mx-auto flex min-h-screen p-2" style="max-width: 800px;">
+    <div class="w-100 p-5 bg-neutral-50 text-neutral-900 self-center drop-shadow-xl border-yellow-700 border-4 md:mt-0 mt-20" style="border-radius: 25px;">
+      <div class="text-center font-extrabold text-3xl text-yellow-900 audiowide">Commissions Queue 2025</div>
+      <hr class="border-yellow-700">
+      <div>Welcome to Pepperly's Commission Queue and Progress report! Here's where you can check how things are progressing. If you've stumbled onto this list somehow, you can check out my <a href="https://www.pepperly.art/commissions" class="text-yellow-700">offerings here!</a></div>
+      
+
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
+      
+
+      <hr class="border-yellow-700 my-3">
+
+      <div class="grid grid-cols-6 gap-2">
+
+        <div class="col-span-6 md:col-span-2 border-amber-700 border-2 img-preview" style="background-image: url('https://f005.backblazeb2.com/file/pepperly-dump/ShareX/2025/01/CLIPStudioPaint_JKOhmMTzVr.png'); border-radius: 10px; min-height: 100px;">
+          <a href="#002" class="fill-div"></a>
+        </div>
+
+        <div class="col-span-6 md:col-span-4 p-2">
+          <div class="grid grid-cols-4 mb-2">
+            <div class=" md:col-span-2 col-span-4">
+              <p><span class="uppercase font-bold">name:</span> ClarissaPlusPlus</p>
+            </div>
+            <div class=" md:col-span-2 col-span-4 text-right">
+              <p><span class="uppercase font-bold">contact:</span> Mastodon</p>
+            </div>
+            <div class=" md:col-span-2 col-span-4">
+              <p><span class="uppercase font-bold">type:</span> Timed Illustrations</p>
+            </div>
+            <div class=" md:col-span-2 col-span-4 text-right">
+              <p><span class="uppercase font-bold">Jan 12 </span> </p>
+            </div>
+          </div><div class="w-100 flex bg-slate-50 "> 
+            <div class="p-4 grow bg-red-500 -mr-4" style="clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);"></div>
+            <div class="p-4 grow bg-neutral-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-slate-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-neutral-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-slate-500 -ml-4" style="clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+          </div><div class="grid grid-cols-4 mb-2">
+            <div class="md:col-span-2 col-span-4">
+              <p><span class="uppercase font-bold">progress:</span> Sketching</p>
+            </div>
+            <div class="md:col-span-2 col-span-4 text-right">
+              <p><span class="uppercase font-bold">Time:</span> ~1hr</p>
+            </div>
+            <div class="col-span-4">
+              <p class="uppercase font-bold">Notes:</p>
+              <p>3 character designs; 5 characters total. 1 character in early stages of design, 2 untouched.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+
+      <hr class="border-yellow-700 my-3">
+
+      <div class="grid grid-cols-6 gap-2">
+
+        <div class="col-span-6 md:col-span-2 border-amber-700 border-2 img-preview" style="background-image: url('https://f005.backblazeb2.com/file/pepperly-dump/ShareX/2025/01/CLIPStudioPaint_sGSyN5giwf.png'); border-radius: 10px; min-height: 100px;">
+          <a href="#001" class="fill-div"></a>
+        </div>
+
+        <div class="col-span-6 md:col-span-4 p-2">
+          <div class="grid grid-cols-4 mb-2">
+            <div class=" md:col-span-2 col-span-4">
+              <p><span class="uppercase font-bold">name:</span> iinasmuch</p>
+            </div>
+            <div class=" md:col-span-2 col-span-4 text-right">
+              <p><span class="uppercase font-bold">contact:</span> Toyhou.se</p>
+            </div>
+            <div class=" md:col-span-2 col-span-4">
+              <p><span class="uppercase font-bold">type:</span> 3x Simple Chibis</p>
+            </div>
+            <div class=" md:col-span-2 col-span-4 text-right">
+              <p><span class="uppercase font-bold">Jan 5 - Jan 12</span> </p>
+            </div>
+          </div><div class="w-100 flex bg-slate-50 "> 
+            <div class="p-4 grow bg-red-500 -mr-4" style="clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);"></div>
+            <div class="p-4 grow bg-orange-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-yellow-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-green-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-blue-500 -ml-4" style="clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+          </div><div class="grid grid-cols-4 mb-2">
+            <div class="md:col-span-2 col-span-4">
+              <p><span class="uppercase font-bold">progress:</span> Complete</p>
+            </div>
+            <div class="md:col-span-2 col-span-4 text-right">
+              <p><span class="uppercase font-bold">Time:</span> ~3hrs</p>
+            </div>
+            <div class="col-span-4">
+              <p class="uppercase font-bold">Notes:</p>
+              <p>Simple Chibis on a repeating grid. Not uploaded on socmed; need to Glaze</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+
+      <hr class="border-yellow-700 my-3">
+      <div class="w-100 flex flex-wrap justify-evenly">
+        
+        <a href="https://www.pepperly.art/" ><iconify-icon icon="lineicons:www-cursor" inline width="25px" height="25px" class="iconify bg-amber-200 p-2" style="border-radius: 100%;"></iconify-icon></a>
+        
+        <a href="https://toyhou.se/pepperly" ><iconify-icon icon="lsicon:house-filled" inline width="25px" height="25px" class="iconify bg-teal-200 p-2" style="border-radius: 100%;"></iconify-icon></a>
+        
+        <a href="https://newgrounds.com/pepperly" ><iconify-icon icon="game-icons:tank" inline width="25px" height="25px" class="iconify bg-orange-200 p-2" style="border-radius: 100%;"></iconify-icon></a>
+        
+        <a href="https://pepperly.tumblr.com/" ><iconify-icon icon="ri:tumblr-fill" inline width="25px" height="25px" class="iconify bg-blue-200 p-2" style="border-radius: 100%;"></iconify-icon></a>
+        
+        <a href="https://mastodon.art/@Pepperly" ><iconify-icon icon="mdi:mastodon" inline width="25px" height="25px" class="iconify bg-indigo-200 p-2" style="border-radius: 100%;"></iconify-icon></a>
+        
+        <a href="https://bsky.app/profile/pepperly.art" ><iconify-icon icon="ri:bluesky-fill" inline width="25px" height="25px" class="iconify bg-sky-200 p-2" style="border-radius: 100%;"></iconify-icon></a>
+        
+        <a href="https://x.com/pepperly_art" ><iconify-icon icon="mdi:twitter" inline width="25px" height="25px" class="iconify bg-cyan-200 p-2" style="border-radius: 100%;"></iconify-icon></a>
+        
+        <a href="https://youtube.com/pepperly" ><iconify-icon icon="mdi:youtube" inline width="25px" height="25px" class="iconify bg-red-200 p-2" style="border-radius: 100%;"></iconify-icon></a>
+        
+        <a href="https://ko-fi.com/pepperly" ><iconify-icon icon="cib:ko-fi" inline width="25px" height="25px" class="iconify bg-rose-200 p-2" style="border-radius: 100%;"></iconify-icon></a>
+        
+      </div>
+
+      <hr class="border-yellow-100 my-3">
+      <div class="text-neutral-300 flex justify-around">
+      <p>Last updated:</p><time datetime="2025-01-26T17:11:11.640Z" class="block">01/26/2025</time>
+      </div>
+    </div>
+
+    
+    <a href="#" class="lightbox" id="002">
+      <span style="background-image: url('https://f005.backblazeb2.com/file/pepperly-dump/ShareX/2025/01/CLIPStudioPaint_JKOhmMTzVr.png')"></span>
+    </a>
+    
+    <a href="#" class="lightbox" id="001">
+      <span style="background-image: url('https://f005.backblazeb2.com/file/pepperly-dump/ShareX/2025/01/CLIPStudioPaint_sGSyN5giwf.png')"></span>
+    </a>
+    
+
+  </main>
+  
+
+
+
+</body>
+<script src="/_assets/js/_app.js?v=202502612"></script>
+
+
+</html>

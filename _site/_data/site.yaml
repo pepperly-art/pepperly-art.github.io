@@ -1,0 +1,45 @@
+---
+meta:
+  title: Pepperly's Commission Queue
+  description: A little github site that will keep track of my commissions and progress equally as easy as Trello.
+  url: https://pepperly-art.github.io/
+  author: Pepperly
+  author_url: https://pepperly.art
+
+social:
+  - title: Homepage
+    url: https://www.pepperly.art/
+    ico: lineicons:www-cursor
+    color: amber
+  - title: Toyhouse
+    url: https://toyhou.se/pepperly
+    ico: lsicon:house-filled
+    color: teal
+  - title: Newgrounds
+    url: https://newgrounds.com/pepperly
+    ico: game-icons:tank
+    color: orange
+  - title: Tumblr
+    url: https://pepperly.tumblr.com/
+    ico: ri:tumblr-fill
+    color: blue
+  - title: Mastodon
+    url: https://mastodon.art/@Pepperly
+    ico: mdi:mastodon
+    color: indigo
+  - title: Bluesky
+    url: https://bsky.app/profile/pepperly.art
+    ico: ri:bluesky-fill
+    color: sky
+  - title: Xitter
+    url: https://x.com/pepperly_art
+    ico: mdi:twitter
+    color: cyan
+  - title: Youtube
+    url: https://youtube.com/pepperly
+    ico: mdi:youtube
+    color: red
+  - title: Ko-fi
+    url: https://ko-fi.com/pepperly
+    ico: cib:ko-fi
+    color: rose

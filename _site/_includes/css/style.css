@@ -1,0 +1,57 @@
+hr {
+    border-width: 2px;
+    border-style: dashed;
+}
+
+.audiowide {
+    font-family: "Audiowide", sans-serif
+}
+
+.img-preview {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+a.fill-div {
+    display: flex;
+    height: 100%;
+    align-items: stretch;
+}
+
+
+.lightbox {
+    /* Default to hidden */
+    display: none;
+  
+    /* Overlay entire screen */
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    /* A bit of padding around image */
+    padding: 1em;
+  
+    /* Translucent background */
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Unhide the lightbox when it's the target */
+  .lightbox:target {
+    display: block;
+  }
+  
+  .lightbox span {
+    /* Full width and height */
+    display: block;
+    width: 100vw;
+    height: 100vh;
+  
+    /* Size and position background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }

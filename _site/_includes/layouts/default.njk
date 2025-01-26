@@ -1,0 +1,174 @@
+{%- set page_title -%}{{ title +' :: '+ site.meta.title if title else site.meta.title }}{%- endset -%}
+
+<!doctype html>
+<html lang="en" class="bg-transparent antialiased [&:has(:is(dialog[open]))]:(overflow-hidden [scrollbar-gutter:stable])" x-data>
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>{{ page_title }}</title>
+    <meta name="description" content="{{ site.meta.description }}" />
+    <meta name="author" content="{{ site.meta.author }} - {{ site.meta.author_url }}" />
+    <meta name="generator" content="{{ eleventy.generator }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="{{ '/' | url }}favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link onload="this.onload=null;this.rel='stylesheet'" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" />
+
+    <meta property="og:title" content="{{ page_title }}" />
+    <meta property="og:description" content="{{ site.meta.description }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ page.url | url }}" />
+    <meta property="og:image" content="{{ '/' | url }}_assets/img/og.png" />
+
+    {% set css %}
+      {% include 'css/prism.css' %}
+      {% include 'css/style.css' %}
+    {% endset %}
+    <style>{{ css | cssmin | safe }}</style>
+    {% renderblock 'css' %}
+    
+    <script>
+      if (localStorage.getItem('color-mode') === 'dark' || (window.matchMedia('(prefers-color-scheme: dark)').matches && !localStorage.getItem('color-mode'))) {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+  </head>
+<body class="bg-neutral-200 text-pri-900 !block" style="background-image: url('_assets/img/argyle.png'); display: none;">
+  
+  <header class="w-100">
+      <div class="float-right mr-5 mt-5 -ml-20 bg-neutral-100 z-50" style="border-radius: 100%;">
+        <button class="color-mode text-gray-500 motion-safe:(transition) hover:(text-gray-700) m-3" aria-label="Toggle color mode">
+          <span class="block dark:(hidden)"><iconify-icon icon="mdi:weather-sunny" inline="false" class="iconify text-xl"></iconify-icon> <span class="sr-only">Switch to dark mode</span></span>
+          <span class="hidden dark:(block)"><iconify-icon icon="mdi:weather-night" inline="false" class="iconify text-xl"></iconify-icon> <span class="sr-only">Switch to light mode</span></span>
+        </button>
+      </div>
+  </header>
+
+  <main class="mx-auto flex min-h-screen p-2" style="max-width: 800px;">
+    <div class="w-100 p-5 bg-neutral-50 text-neutral-900 self-center drop-shadow-xl border-yellow-700 border-4 md:mt-0 mt-20" style="border-radius: 25px;">
+      <div class="text-center font-extrabold text-3xl text-yellow-900 audiowide">Commissions Queue 2025</div>
+      <hr class="border-yellow-700">
+      <div>Welcome to Pepperly's Commission Queue and Progress report! Here's where you can check how things are progressing. If you've stumbled onto this list somehow, you can check out my <a href="https://www.pepperly.art/commissions" class="text-yellow-700">offerings here!</a></div>
+      
+
+      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
+      {% for item in commlist.items | reverse %}
+
+      <hr class="border-yellow-700 my-3">
+
+      <div class="grid grid-cols-6 gap-2">
+
+        <div class="col-span-6 md:col-span-2 border-amber-700 border-2 img-preview" style="background-image: url('{{ item.image }}'); border-radius: 10px; min-height: 100px;">
+          <a href="#{{ item.ID }}" class="fill-div"></a>
+        </div>
+
+        <div class="col-span-6 md:col-span-4 p-2">
+          <div class="grid grid-cols-4 mb-2">
+            <div class=" md:col-span-2 col-span-4">
+              <p><span class="uppercase font-bold">name:</span> {{ item.name }}</p>
+            </div>
+            <div class=" md:col-span-2 col-span-4 text-right">
+              <p><span class="uppercase font-bold">contact:</span> {{ item.contact }}</p>
+            </div>
+            <div class=" md:col-span-2 col-span-4">
+              <p><span class="uppercase font-bold">type:</span> {{ item.type }}</p>
+            </div>
+            <div class=" md:col-span-2 col-span-4 text-right">
+              <p><span class="uppercase font-bold">{{ item.date }}</span> </p>
+            </div>
+          </div>
+          
+          {%-if item.arrows == "5" -%}
+          <div class="w-100 flex bg-slate-50 "> 
+            <div class="p-4 grow bg-red-500 -mr-4" style="clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);"></div>
+            <div class="p-4 grow bg-orange-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-yellow-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-green-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-blue-500 -ml-4" style="clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+          </div>
+          {%-elif item.arrows == "4" -%}
+          <div class="w-100 flex bg-slate-50 "> 
+            <div class="p-4 grow bg-red-500 -mr-4" style="clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);"></div>
+            <div class="p-4 grow bg-orange-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-yellow-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-green-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-slate-500 -ml-4" style="clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+          </div>
+          {%-elif item.arrows == "3" -%}
+          <div class="w-100 flex bg-slate-50 "> 
+            <div class="p-4 grow bg-red-500 -mr-4" style="clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);"></div>
+            <div class="p-4 grow bg-orange-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-yellow-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-neutral-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-slate-500 -ml-4" style="clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+          </div>
+          {%-elif item.arrows == "2" -%}
+          <div class="w-100 flex bg-slate-50 "> 
+            <div class="p-4 grow bg-red-500 -mr-4" style="clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);"></div>
+            <div class="p-4 grow bg-orange-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-slate-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-neutral-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-slate-500 -ml-4" style="clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+          </div>
+          {%-elif item.arrows == "1" -%}
+          <div class="w-100 flex bg-slate-50 "> 
+            <div class="p-4 grow bg-red-500 -mr-4" style="clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);"></div>
+            <div class="p-4 grow bg-neutral-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-slate-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-neutral-500 -mx-4" style="clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+            <div class="p-4 grow bg-slate-500 -ml-4" style="clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);"></div>
+          </div>
+          {%- endif -%}
+
+          <div class="grid grid-cols-4 mb-2">
+            <div class="md:col-span-2 col-span-4">
+              <p><span class="uppercase font-bold">progress:</span> {{ item.progress }}</p>
+            </div>
+            <div class="md:col-span-2 col-span-4 text-right">
+              <p><span class="uppercase font-bold">Time:</span> {{ item.time }}</p>
+            </div>
+            <div class="col-span-4">
+              <p class="uppercase font-bold">Notes:</p>
+              <p>{{ item.notes }}</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      {% endfor %}
+
+      <hr class="border-yellow-700 my-3">
+      <div class="w-100 flex flex-wrap justify-evenly">
+        {% for item in site.social %}
+        <a href="{{ item.url }}" ><iconify-icon icon="{{ item.ico }}" inline width="25px" height="25px" class="iconify bg-{{ item.color }}-200 p-2" style="border-radius: 100%;"></iconify-icon></a>
+        {% endfor %}
+      </div>
+
+      <hr class="border-yellow-100 my-3">
+      <div class="text-neutral-300 flex justify-around">
+      <p>Last updated:</p><time datetime="{{ build.time.raw }}" class="block">{{ build.time.formatted }}</time>
+      </div>
+    </div>
+
+    {% for item in commlist.items | reverse %}
+    <a href="#" class="lightbox" id="{{ item.ID }}">
+      <span style="background-image: url('{{ item.image }}')"></span>
+    </a>
+    {% endfor %}
+
+  </main>
+  
+
+
+
+</body>
+
+{%- renderblock 'js' %}
+<script src="{{ '/' | url }}_assets/js/_app.js?v={% bust %}"></script>
+
+
+</html>
