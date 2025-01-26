@@ -54,8 +54,6 @@
       <hr class="border-yellow-700">
       <div>Welcome to Pepperly's Commission Queue and Progress report! Here's where you can check how things are progressing. If you've stumbled onto this list somehow, you can check out my <a href="https://www.pepperly.art/commissions" class="text-yellow-700">offerings here!</a></div>
       
-
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  -->
       {% for item in commlist.items | reverse %}
 
       <hr class="border-yellow-700 my-3">
@@ -161,14 +159,10 @@
     {% endfor %}
 
   </main>
-  
-
-
-
 </body>
 
 {%- renderblock 'js' %}
-<script src="{{ '/' | url }}_assets/js/_app.js?v={% bust %}"></script>
-
+<script src="_assets/js/_app.js?v={% bust %}"></script>
+<!-- <script src="{{ '/' | url }}_assets/js/_app.js?v={% bust %}"></script>-->
 
 </html>
