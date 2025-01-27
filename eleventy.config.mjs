@@ -6,6 +6,8 @@ import markdownIt from 'markdown-it';
 import markdownItAttrs from 'markdown-it-attrs';
 import yaml from 'js-yaml';
 import CleanCSS from 'clean-css';
+import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
+
 
 export default function (eleventyConfig) {
 
@@ -101,6 +103,8 @@ export default function (eleventyConfig) {
       input: '_site',
       output: 'docs',
     },
-    pathPrefix: '/',
+    pathPrefix: '/pepperly-art.github.io/',
   };
+
+
 };
