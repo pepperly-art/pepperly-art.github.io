@@ -7,3 +7,5 @@ My intent is to just hop into the main commission list json to add data as I nee
 If you're a fellow artist and want to use this setup as your own Trello replacement, feel free to clone this and mess around with it. All important data is located in commlist.json and site.yaml and you shouldn't need to mess with anything else to just track. 
 
 Features: Non-javascript lightbox, light/dark mode, mobile responsiveness, one json that does ALL THE WORK.
+
+Thank you Chris and [this page](https://www.dawidsblog.com/posts/tutorial_11ty_github_pages/) for helping me actually make this site appear on github.io!!!
