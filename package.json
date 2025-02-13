@@ -5,7 +5,8 @@
   "scripts": {
     "start": "eleventy --serve --quiet",
     "build": "eleventy",
-    "ghpages": "eleventy --pathprefix=11ty-twind"
+    "ghpages": "eleventy --pathprefix=11ty-twind",
+    "deploy": "npm run build && node _scripts/index.js"
   },
   "keywords": [
     "11ty",
@@ -33,5 +34,8 @@
     "js-yaml": "^4.1.0",
     "markdown-it-attrs": "^4.1.6",
     "tippy.js": "^6.3.7"
+  },
+  "dependencies": {
+    "inquirer": "^12.4.1"
   }
 }
