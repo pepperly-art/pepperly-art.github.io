@@ -8,4 +8,8 @@ If you're a fellow artist and want to use this setup as your own Trello replacem
 
 Features: Non-javascript lightbox, light/dark mode, mobile responsiveness, one json that does ALL THE WORK.
 
+## Special Thanks
+
 Thank you Chris and [this page](https://www.dawidsblog.com/posts/tutorial_11ty_github_pages/) for helping me actually make this site appear on github.io!!!
+
+Also thank you Chris for the [easy deploy script!!](https://github.com/cmstead/perpa-build)
