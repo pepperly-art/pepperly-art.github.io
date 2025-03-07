@@ -13,3 +13,4 @@ Features: Non-javascript lightbox, light/dark mode, mobile responsiveness, one j
 Thank you Chris and [this page](https://www.dawidsblog.com/posts/tutorial_11ty_github_pages/) for helping me actually make this site appear on github.io!!!
 
 Also thank you Chris for the [easy deploy script!!](https://github.com/cmstead/perpa-build)
+I broke the deploy script!?
