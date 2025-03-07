@@ -18,10 +18,21 @@
         "contact": "Mastodon",
         "type": "Timed Illustrations",
         "date": "Jan 12 ",
-        "arrows": "3",
-        "progress": "Coloring",
+        "arrows": "4",
+        "progress": "Shading & final colors",
         "time": "~10hr",
-        "notes": "3 character designs; 5 characters total. All 5 characters inked, with small tweaks to come along with cel shading."
+        "notes": "3 character designs; 5 characters total. All 5 characters inked, with small tweaks to come along with cel shading. 1 character complete."
+    },    {
+        "image": "https://placehold.co/400x400?text=to-do",
+        "ID": "003",
+        "name": "dedfish",
+        "contact": "Toyhouse",
+        "type": "Timed Illustration",
+        "date": "March 6",
+        "arrows": "0",
+        "progress": "Not Started",
+        "time": "1 - 2 hours",
+        "notes": "Waiting on reply"
     }
     ]
 }
