@@ -31,8 +31,30 @@
         "date": "March 6 - March 12" ,
         "arrows": "5",
         "progress": "Complete",
-        "time": "~1. hour",
+        "time": "~1 hour",
         "notes": "Not uploaded on socmed; need to Glaze."
+    },    {
+        "image": "https://f005.backblazeb2.com/file/pepperly-dump/ShareX/2025/04/CLIPStudioPaint_JFLf9djCx8.png",
+        "ID": "004",
+        "name": "dedfish",
+        "contact": "Toyhouse",
+        "type": "Timed Illustration",
+        "date": "March 27 - April 4" ,
+        "arrows": "5",
+        "progress": "Complete",
+        "time": "~2 hour",
+        "notes": "Not uploaded on socmed; need to Glaze."
+    },    {
+        "image": "https://placehold.co/",
+        "ID": "005",
+        "name": "imkeeby",
+        "contact": "bsky",
+        "type": "FNF",
+        "date": "April" ,
+        "arrows": "1",
+        "progress": "Not hashed out yet",
+        "time": "X",
+        "notes": "Haven't hashed it out yet, death sequence for Pokepalooza"
     }
-    ]
+]
 }
