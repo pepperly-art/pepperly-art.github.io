@@ -52,9 +52,20 @@
         "type": "FNF",
         "date": "April" ,
         "arrows": "1",
-        "progress": "Not hashed out yet",
-        "time": "X",
-        "notes": "Haven't hashed it out yet, death sequence for Pokepalooza"
+        "progress": "Mostly sketched, partial animation complete",
+        "time": "~4hrs",
+        "notes": "Not paid; going hourly."
+    },    {
+        "image": "https://placehold.co/",
+        "ID": "006",
+        "name": "dear_crybunny",
+        "contact": "toyhouse",
+        "type": "Timed Illustration",
+        "date": "April 25" ,
+        "arrows": "1",
+        "progress": "Replied",
+        "time": "1hr",
+        "notes": "Not paid; invoice sent."
     }
 ]
 }
