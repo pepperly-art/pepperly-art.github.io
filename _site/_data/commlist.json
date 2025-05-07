@@ -45,7 +45,7 @@
         "time": "~2 hour",
         "notes": "Not uploaded on socmed; need to Glaze."
     },    {
-        "image": "https://placehold.co/",
+        "image": "https://placehold.co/600x400/000000/ffffff?text=WIP",
         "ID": "005",
         "name": "imkeeby",
         "contact": "bsky",
@@ -54,7 +54,7 @@
         "arrows": "1",
         "progress": "Mostly sketched, partial animation complete",
         "time": "~4hrs",
-        "notes": "Not paid; going hourly."
+        "notes": "Not paid; going hourly. Death for https://breezewiki.com/fridaynightfunking/wiki/Friday_Night_Funkin%27:_Pokepalooza"
     },    {
         "image": "https://f005.backblazeb2.com/file/pepperly-dump/ShareX/2025/05/CLIPStudioPaint_Fd2ClFykCB.png",
         "ID": "006",
@@ -65,29 +65,29 @@
         "arrows": "5",
         "progress": "Complete",
         "time": "1hr",
-        "notes": "Complete"
+        "notes": "Not uploaded on socmed; need to Glaze."
     },   {
-        "image": "https://placehold.co/",
+        "image": "https://f005.backblazeb2.com/file/pepperly-dump/ShareX/2025/05/CLIPStudioPaint_Dowd3iWWeq.png",
         "ID": "007",
         "name": "dedfish",
         "contact": "toyhouse",
         "type": "speedpaint",
         "date": "April 30" ,
         "arrows": "1",
-        "progress": "paid",
+        "progress": "Sketch",
         "time": "2hrs",
-        "notes": "Paid"
+        "notes": "blockout & sketch"
     },   {
-        "image": "https://placehold.co/",
+        "image": "https://f005.backblazeb2.com/file/pepperly-dump/ShareX/2025/05/CLIPStudioPaint_GrYjBwG2B1.png",
         "ID": "008",
         "name": "dedfish",
         "contact": "toyhouse",
         "type": "simple chibi",
-        "date": "April 30" ,
-        "arrows": "1",
-        "progress": "paid",
-        "time": "x",
-        "notes": "Paid"
+        "date": "April 30-May 6" ,
+        "arrows": "5",
+        "progress": "Complete",
+        "time": "??",
+        "notes": "Will send with below; Not uploaded on socmed; need to Glaze."
     }
 ]
 }
